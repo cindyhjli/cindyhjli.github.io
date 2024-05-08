@@ -36,7 +36,7 @@ const data = [
 const ProjectsList = () => {
   return (
     <div id='projects' className='w-full m-auto px-[25%] p-4 py-24 relative'>
-      <h1 className='text-7xl font-bold text-left text-white pb-24'>Projects</h1>
+      <h1 className='text-4xl font-bold text-left text-white pb-24'>Projects</h1>
       <div className='px-2'>
         <div className='flex flex-wrap gap-y-8 justify-between'>
         {data.map((item, index) => (

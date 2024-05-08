@@ -9,19 +9,19 @@ const Leadership = ({date, title, organization, description, first, link}) => {
                 <div>
                     <div className='absolute w-5 h-5 bg-gray-200 rounded-full mt-2.5 -left-2.5 border-gray-200' />
                     {link ? (
-                    <a href={link} className='flex pt-2 text-[#19A6FF] hover:underline font-bold text-4xl'>{organization}<span className='pt-1 pl-4'><FaExternalLinkAlt /></span></a>
-                    ) : <p className='text-[#19A6FF] text-4xl mt-2 font-bold pb-4'>
+                    <a href={link} className='flex pt-2 text-[#19A6FF] hover:underline font-bold text-xl'>{organization}<span className='pt-1 pl-4'><FaExternalLinkAlt /></span></a>
+                    ) : <p className='text-[#19A6FF] text-xl mt-2 font-bold pb-4'>
                             {organization}
                         </p>}
                 </div>
                 ) : null}
-                <p className='text-gray-400 text-3xl'>
+                <p className='text-gray-400 text-lg'>
                     {date}
                 </p>
-                <p className='text-gray-200 text-3xl mt-2 font-bold'>
+                <p className='text-gray-200 text-lg mt-2 font-bold'>
                     {title}
                 </p>
-                <p className='text-gray-300 text-3xl mt-4'>{description}</p>
+                <p className='text-gray-300 text-lg mt-4'>{description}</p>
             </li>
         </ol>
     )

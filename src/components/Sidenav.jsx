@@ -72,38 +72,38 @@ const Sidenav = () => {
                     <a
                         href="#about"
                         className={`anchor ${active === 'about' ? 'active' : ''}`}
-                        style={{ display: active == 'home' || active == '' ? 'none' : '', color: active === 'about' ? '#e5e7eb' : '#9ca3af', fontWeight: active === 'about' ? 'bold' : '', fontSize: '35px', paddingTop: '10px', paddingBottom: '10px'}}
+                        style={{ display: active == 'home' || active == '' ? 'none' : '', color: active === 'about' ? '#e5e7eb' : '#9ca3af', fontWeight: active === 'about' ? 'bold' : '', fontSize: '20px', paddingTop: '10px', paddingBottom: '10px'}}
                     >
                         About
                     </a>
                     <a
                         href="#experience"
                         className={`anchor ${active === 'experience' ? 'active' : ''}`}
-                        style={{ display: active == 'home' || active == '' ? 'none' : '', color: active === 'experience' ? '#e5e7eb' : '#9ca3af', fontWeight: active === 'experience' ? 'bold' : '', fontSize: '35px', paddingTop: '10px', paddingBottom: '10px'}}
+                        style={{ display: active == 'home' || active == '' ? 'none' : '', color: active === 'experience' ? '#e5e7eb' : '#9ca3af', fontWeight: active === 'experience' ? 'bold' : '', fontSize: '20px', paddingTop: '10px', paddingBottom: '10px'}}
                     >
                         Experience
                     </a>
                     <a
                         href="#projects"
                         className={`anchor ${active === 'projects' ? 'active' : ''}`}
-                        style={{ display: active == 'home' || active == '' ? 'none' : '', color: active === 'projects' ? '#e5e7eb' : '#9ca3af', fontWeight: active === 'projects' ? 'bold' : '', fontSize: '35px', paddingTop: '10px', paddingBottom: '10px'}}
+                        style={{ display: active == 'home' || active == '' ? 'none' : '', color: active === 'projects' ? '#e5e7eb' : '#9ca3af', fontWeight: active === 'projects' ? 'bold' : '', fontSize: '20px', paddingTop: '10px', paddingBottom: '10px'}}
                     >
                         Projects
                     </a>
                     <a
                         href="#leadership"
                         className={`anchor ${active === 'leadership' ? 'active' : ''}`}
-                        style={{ display: active == 'home' || active == '' ? 'none' : '', color: active === 'leadership' ? '#e5e7eb' : '#9ca3af', fontWeight: active === 'leadership' ? 'bold' : '', fontSize: '35px', paddingTop: '10px', paddingBottom: '10px'}}
+                        style={{ display: active == 'home' || active == '' ? 'none' : '', color: active === 'leadership' ? '#e5e7eb' : '#9ca3af', fontWeight: active === 'leadership' ? 'bold' : '', fontSize: '20px', paddingTop: '10px', paddingBottom: '10px'}}
                     >
                         Leadership
                     </a>
                     <div className='fixed bottom-0'>
                         <div className='flex justify-center pt-16 w-[85%] text-gray-200' style={{ display: active == 'home' || active == '' ? 'none' : ''}}>
-                            <a href='http://www.linkedin.com/in/cindy-hj-li'><FaLinkedin className='cursor-pointer mx-3' size={40}/></a>
-                            <a href='https://github.com/cindyhjli'><FaGithub className='cursor-pointer mx-3' size={40}/></a>
-                            <a href="mailto:cindy.li2@uwaterloo.ca"><IoMdMail className='cursor-pointer mx-3' size={40}/></a>
+                            <a href='http://www.linkedin.com/in/cindy-hj-li'><FaLinkedin className='cursor-pointer mx-3' size={25}/></a>
+                            <a href='https://github.com/cindyhjli'><FaGithub className='cursor-pointer mx-3' size={25}/></a>
+                            <a href="mailto:cindy.li2@uwaterloo.ca"><IoMdMail className='cursor-pointer mx-3' size={25}/></a>
                         </div>
-                        <p className='text-2xl text-left text-gray-200 mb-16 mt-6'>&copy; 2024 Cindy Li</p>
+                        <p className='text-md text-left text-gray-200 mb-16 mt-6'>&copy; 2024 Cindy Li</p>
                     </div>
                 </div>
             </div>

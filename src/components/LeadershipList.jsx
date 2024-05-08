@@ -168,7 +168,7 @@ const Expand = () => {
 
     return (
         <div className='expand-collapse'>
-            <button onClick={() => setExpand(!expand)}><h2 className='flex text-5xl font-bold text-left text-gray-200 pb-24 pt-16'>High School<span><IoIosArrowDown className={`ml-4 mt-2 w-10 h-10 transform ${expand ? 'rotate-180' : 'rotate-0'}`}/></span></h2></button>
+            <button onClick={() => setExpand(!expand)}><h2 className='flex text-2xl font-bold text-left text-gray-200 pb-24 pt-16'>High School<span><IoIosArrowDown className={`ml-4 mt-2 w-10 h-10 transform ${expand ? 'rotate-180' : 'rotate-0'}`}/></span></h2></button>
             {expand && <div>{dataHS.map((item, index) => (
                 <Leadership key={index} date={item.date} title={item.title} organization={item.organization} description={item.description} first={item.first} link={item.link} />
             ))}</div>}
@@ -179,7 +179,7 @@ const Expand = () => {
 const LeadershipList = () => {
     return (
         <div id='leadership' className='w-full m-auto px-[25%] p-4 py-24 relative'>
-            <h1 className='text-7xl font-bold text-left text-gray-200 pb-24'>Leadership & Extracurricular</h1>
+            <h1 className='text-4xl font-bold text-left text-gray-200 pb-24'>Leadership & Extracurricular</h1>
             {data.map((item, index) => (
                 <Leadership key={index} date={item.date} title={item.title} organization={item.organization} description={item.description} first={item.first} link={item.link} />
             ))}

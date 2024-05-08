@@ -21,7 +21,7 @@ const data = [
 const WorkList = () => {
   return (
     <div id='experience' className='w-full m-auto px-[25%] p-4 py-24 relative'>
-        <h1 className='text-7xl font-bold text-left text-gray-200 pb-24'>Work Experience</h1>
+        <h1 className='text-4xl font-bold text-left text-gray-200 pb-24'>Work Experience</h1>
         {data.map((item, index) => (
             <Work key={index} term={item.term} title={item.title} company={item.company} description={item.description} skills={item.skills}/>
         ))}
