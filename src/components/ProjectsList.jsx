@@ -35,10 +35,10 @@ const data = [
 
 const ProjectsList = () => {
   return (
-    <div id='projects' className='w-full m-auto px-[25%] p-4 py-24 relative'>
-      <h1 className='text-4xl font-bold text-left text-white pb-24'>Projects</h1>
-      <div className='px-2'>
-        <div className='flex flex-wrap gap-y-8 justify-between'>
+    <div id='projects' className='w-full m-auto px-[25%] p-2 py-12 relative'>
+      <h1 className='text-4xl font-bold text-left text-white pb-12'>Projects</h1>
+      <div className='px-1'>
+        <div className='flex flex-wrap gap-y-4 justify-between'>
         {data.map((item, index) => (
             <Project key={index} term={item.term} title={item.title} description={item.description} skills={item.skills} priv={item.priv} link={item.link}/>
         ))}
