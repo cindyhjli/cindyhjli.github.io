@@ -29,7 +29,7 @@ const Main = () => {
             <a href="mailto:cindy.li2@uwaterloo.ca"><IoMdMail className='cursor-pointer mx-2.5' size={40}/></a>
           </div>
           <div className='absolute bottom-2'>
-            <a href='#about' className='items-center text-gray-200'><IoIosArrowDown className='cursor-pointer my-6' size={40} color='white' /></a>
+            <a href='#about' className='md:block hidden items-center text-gray-200'><IoIosArrowDown className='cursor-pointer my-6' size={40} color='white' /></a>
           </div>
         </div>
       </div>

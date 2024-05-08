@@ -1,8 +1,6 @@
 import React, {useState, useEffect} from 'react'
-import {AiOutlineUser, AiOutlineHome, AiOutlineMenu, AiOutlineLineChart} from 'react-icons/ai'
-import {GrProjects} from 'react-icons/gr'
-import {PiBriefcase} from "react-icons/pi";
-import { FaLinkedin, FaGithub, FaLink } from 'react-icons/fa'
+import {AiOutlineMenu} from 'react-icons/ai'
+import { FaLinkedin, FaGithub} from 'react-icons/fa'
 import { IoMdMail } from "react-icons/io";
 
 const Sidenav = () => {
@@ -37,7 +35,7 @@ const Sidenav = () => {
     
     return (
         <div>
-            <AiOutlineMenu onClick={handleNav} className='absolute top-5 right-5 z-[100] md:hidden text-gray-200' />
+            <AiOutlineMenu onClick={handleNav} className='absolute top-5 w-5 h-5 right-5 z-[100] md:hidden text-gray-200' />
             {
                 nav ? (
                     <div className='fixed w-full h-screen bg-black/75 flex flex-col justify-center items-center z-20'>
@@ -60,7 +58,15 @@ const Sidenav = () => {
                 ) : (
                     ''
                 )
-            } <div className='md:block hidden fixed left-[4%] z-10'>
+            } <div className='md:hidden fixed bottom-0 left-[4%] z-10'>
+                <div className='flex justify-center pt-16 w-[85%] text-gray-200' style={{ display: active == 'home' || active == '' ? 'none' : ''}}>
+                    <a href='http://www.linkedin.com/in/cindy-hj-li'><FaLinkedin className='cursor-pointer mx-1' size={18}/></a>
+                    <a href='https://github.com/cindyhjli'><FaGithub className='cursor-pointer mx-1' size={18}/></a>
+                    <a href="mailto:cindy.li2@uwaterloo.ca"><IoMdMail className='cursor-pointer mx-1' size={18}/></a>
+                </div>
+                <p className='text-xs text-left text-gray-200 mb-8 mt-3'>&copy; 2024 Cindy Li</p>
+            </div>
+            <div className='md:block hidden fixed left-[4%] z-10'>
                 <div className='flex flex-col h-screen justify-center items-left'>
                     {/* <a
                         href="#home"
